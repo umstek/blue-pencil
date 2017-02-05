@@ -1,0 +1,71 @@
+<bluepencil fileversion="1.0" algorithm="U.S. Standard, DoD 5220.22-M (ECE)" algversion="1.0"> 
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="r1" content="#rand" length="$default"/>
+			<define name="r2" content="#rand" length="$default"/>
+			<define name="r3" content="#rand" length="$default"/>
+			<define name="c1" content="211 211 211 211"/>
+			<define name="c2" content="44 44 44 44"/>
+			<define name="c3" content="149 149 149 149"/>
+			<define name="c4" content="106 106 106 106"/>
+
+			<write content="$c1"/>
+			<write content="$c2"/>
+			<write content="$r1"/>
+			<write content="$r2"/>
+			<write content="$c3"/>
+			<write content="$c4"/>
+			<write content="$r3"/>
+		</main>
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="US Department of Defence" passes="7">
+Highly Secure Algorithm\n
+First Pass: 211\n
+Second Pass: 44\n
+Third Pass: Random Data\n
+Forth Pass: Random Data\n
+Fifth Pass: 149\n
+Sixth Pass: 106\n
+Seventh Pass: Random Data
+  </info>
+	
+</bluepencil>

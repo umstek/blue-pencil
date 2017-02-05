@@ -1,0 +1,60 @@
+<bluepencil fileversion="1.0" algorithm="NAVSO P-5239-26 (RLL)" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="x" content="1 1 1 1 1 1 1 1"/>
+			<define name="y" content="39 255 255 255"/>
+			<define name="z" content="#rand" length="$default"/>
+			
+			<write content="$x"/>
+			<write content="$y"/>
+			<write content="$z"/>
+		</main>
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="US Navy" passes="3">
+Secure Algorithm\n
+First Pass: 01\n
+Second Pass: 39 255 255 255\n
+Third Pass: Random data
+  </info>
+	
+</bluepencil>

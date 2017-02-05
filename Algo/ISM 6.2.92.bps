@@ -1,0 +1,81 @@
+<bluepencil fileversion="1.0" algorithm="ISM 6.2.92" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="critfz" content="3 192 0 0 0"/>
+			
+			<condition select="$filesize">
+				<greaterthan value="$critfz" break="true">
+					<execute function="#fbigfile"/>
+				</greaterthan>
+				<else>
+					<execute function="#flilfile"/>
+				</else>
+			</condition>
+			
+		</main>
+
+		<fbigfile>
+			<define name="x" content="#rand" length="$default"/>
+			
+			<write content="$x"/>
+		</fbigfile>
+		
+		<flilfile>
+			<define name="x" content="#rand" length="$default"/>
+			<define name="y" content="#rand" length="$default"/>
+			<define name="z" content="#rand" length="$default"/>
+			
+			<write content="$x"/>
+			<write content="$y"/>
+			<write content="$z"/>
+		</flilfile>
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="Australian Defence Signals Directorate" passes="1 or 3">
+Secure Algorithm\n
+If file (drive) is larger than 15 GB
+First Pass: Random data
+Else
+Passes 1,2,3: Random Data
+	</info>
+	
+</bluepencil>

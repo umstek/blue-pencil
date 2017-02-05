@@ -1,0 +1,71 @@
+<bluepencil fileversion="1.0" algorithm="Bruce Schneier" algversion="1.0"> 
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="x" content="255 255 255 255"/>
+			<define name="y" content="0 0 0 0"/>
+			<define name="r1" content="#rand" length="$default"/>
+			<define name="r2" content="#rand" length="$default"/>
+			<define name="r3" content="#rand" length="$default"/>
+			<define name="r4" content="#rand" length="$default"/>
+			<define name="r5" content="#rand" length="$default"/>
+			
+			<write content="$x" />
+			<write content="$y" />
+			<write content="$r1" />
+			<write content="$r2" />
+			<write content="$r3" />
+			<write content="$r4" />
+			<write content="$r5" />
+		</main>
+
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="Bruce Schneier" passes="7">
+Highly Secure Algorithm\n
+First Pass: 255\n
+Second Pass: Zeros\n
+Third Pass: Cryptographically secure pseudo-random sequence\n
+Forth Pass: Cryptographically secure pseudo-random sequence\n
+Fifth Pass: Cryptographically secure pseudo-random sequence\n
+Sixth Pass: Cryptographically secure pseudo-random sequence\n
+Seventh Pass: Cryptographically secure pseudo-random sequence
+	</info>
+	
+</bluepencil>

@@ -1,0 +1,60 @@
+<bluepencil fileversion="1.0" algorithm="NCSC-TG-025" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="x" content="#rand" length="0 0 0 0 0 0 0 0"/>
+			<define name="xd" content="#rand" length="255 255 255 255 255 255 255 255"/>
+			<define name="y" content="#rand" length="$default"/>
+			
+			<write content="$x"/>
+			<write content="$xd"/>
+			<write content="$y"/>
+		</main>
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="US NCSC/NSA" passes="3">
+Secure Algorithm\n
+First Pass: Zeros\n
+Second Pass: Ones\n
+Third Pass: Random data
+  </info>
+	
+</bluepencil>

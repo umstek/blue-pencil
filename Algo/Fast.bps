@@ -1,0 +1,54 @@
+<bluepencil fileversion="1.0" algorithm="Fast" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="y" content="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+			
+			<write content="$y"/>
+		</main>
+
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="(anonymous)" passes="1">
+Fast Algorithm (not recommended)\n
+First Pass: Zeros
+	</info>
+	
+</bluepencil>

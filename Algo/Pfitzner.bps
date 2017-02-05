@@ -1,0 +1,117 @@
+<bluepencil fileversion="1.0" algorithm="Pfitzner" algversion="1.0"> 
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="pass1" content="#rand" length="$default"/>
+			<define name="pass2" content="#rand" length="$default"/>
+			<define name="pass3" content="#rand" length="$default"/>
+			<define name="pass4" content="#rand" length="$default"/>
+			<define name="pass5" content="#rand" length="$default"/>
+			<define name="pass6" content="#rand" length="$default"/>
+			<define name="pass7" content="#rand" length="$default"/>
+			<define name="pass8" content="#rand" length="$default"/>
+			<define name="pass9" content="#rand" length="$default"/>
+			<define name="pass10" content="#rand" length="$default"/>
+			<define name="pass11" content="#rand" length="$default"/>
+			<define name="pass12" content="#rand" length="$default"/>
+			<define name="pass13" content="#rand" length="$default"/>
+			<define name="pass14" content="#rand" length="$default"/>
+			<define name="pass15" content="#rand" length="$default"/>
+			<define name="pass16" content="#rand" length="$default"/>
+			<define name="pass17" content="#rand" length="$default"/>
+			<define name="pass18" content="#rand" length="$default"/>
+			<define name="pass19" content="#rand" length="$default"/>
+			<define name="pass20" content="#rand" length="$default"/>
+			<define name="pass21" content="#rand" length="$default"/>
+			<define name="pass22" content="#rand" length="$default"/>
+			<define name="pass23" content="#rand" length="$default"/>
+			<define name="pass24" content="#rand" length="$default"/>
+			<define name="pass25" content="#rand" length="$default"/>
+			<define name="pass26" content="#rand" length="$default"/>
+			<define name="pass27" content="#rand" length="$default"/>
+			<define name="pass28" content="#rand" length="$default"/>
+			<define name="pass29" content="#rand" length="$default"/>
+			<define name="pass30" content="#rand" length="$default"/>
+			<define name="pass31" content="#rand" length="$default"/>
+			<define name="pass32" content="#rand" length="$default"/>
+			<define name="pass33" content="#rand" length="$default"/>
+			
+			<write content="$pass1"/>
+			<write content="$pass2"/>
+			<write content="$pass3"/>
+			<write content="$pass4"/>
+			<write content="$pass5"/>
+			<write content="$pass6"/>
+			<write content="$pass7"/>
+			<write content="$pass8"/>
+			<write content="$pass9"/>
+			<write content="$pass10"/>
+			<write content="$pass11"/>
+			<write content="$pass12"/>
+			<write content="$pass13"/>
+			<write content="$pass14"/>
+			<write content="$pass15"/>
+			<write content="$pass16"/>
+			<write content="$pass17"/>
+			<write content="$pass18"/>
+			<write content="$pass19"/>
+			<write content="$pass20"/>
+			<write content="$pass21"/>
+			<write content="$pass22"/>
+			<write content="$pass23"/>
+			<write content="$pass24"/>
+			<write content="$pass25"/>
+			<write content="$pass26"/>
+			<write content="$pass27"/>
+			<write content="$pass28"/>
+			<write content="$pass29"/>
+			<write content="$pass30"/>
+			<write content="$pass31"/>
+			<write content="$pass32"/>
+			<write content="$pass33"/>
+		</main>
+
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="Roy Pfitzner" passes="33">
+Ultra Secure Slow Algorithm (not recommended)\n
+Passes 1 to 33: Random Data
+	</info>
+	
+</bluepencil>

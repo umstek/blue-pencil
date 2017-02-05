@@ -1,0 +1,59 @@
+<bluepencil fileversion="1.0" algorithm="U.S. Standard, DoD 5220.22-M (E)" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="x" content="#rand" length="$default"/>
+			<define name="y" content="#rand" length="$default"/>
+			
+			<write content="$x"/>
+			<write content="!x"/>
+			<write content="$y"/>
+		</main>
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="US Department of Defence" passes="3">
+Secure Algorithm\n
+First Pass: Random data\n
+Second Pass: Complement of the first passs pattern\n
+Third Pass: Random data
+  </info>
+	
+</bluepencil>

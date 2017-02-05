@@ -1,0 +1,57 @@
+<bluepencil fileversion="1.0" algorithm="GOST P50739-95" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="y" content="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+			<define name="z" content="#rand" length="$default"/>
+			
+			<write content="$y"/>
+			<write content="$z"/>
+		</main>
+
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="Russia" passes="2">
+Fast Secure Algorithm\n
+First Pass: Zeros\n
+Second Pass: Random data
+	</info>
+	
+</bluepencil>

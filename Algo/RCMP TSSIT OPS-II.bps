@@ -1,0 +1,68 @@
+<bluepencil fileversion="1.0" algorithm="RCMP TSSIT OPS-II" algversion="1.0"> 
+
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="x" content="0 0 0 0"/>
+			<define name="y" content="255 255 255 255"/>
+			<define name="z" content="#rand" length="$default"/>
+			
+			<write content="$x" />
+			<write content="$y" />
+			<write content="$x" />
+			<write content="$y" />
+			<write content="$x" />
+			<write content="$y" />
+			<write content="$z" />
+		</main>
+
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="Canada" passes="7">
+Highly Secure Algorithm\n
+First Pass: Zeros\n
+Second Pass: 255\n
+Third Pass: Zeros\n
+Forth Pass: 255\n
+Fifth Pass: Zeros\n
+Sixth Pass: 255\n
+Seventh Pass: Random Data
+	</info>
+	
+</bluepencil>

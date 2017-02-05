@@ -1,0 +1,94 @@
+<bluepencil fileversion="1.0" algorithm="CLR" algversion="1.0"> 
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+		
+			<define name="x" content="#rand" length="$default"/>
+			<define name="y" content="#rand" length="$default"/>
+			<define name="z" content="#rand" length="$default"/>
+			<define name="a1" content="170 204 51 85" />
+			<define name="a2" content="85 51 204 170" />
+			<define name="cond" content="127" />
+			<define name="b" content="#rand" length="1"/>
+			
+			<write content="!$block"/>
+			<write content="$x"/>
+			
+			<condition select="$b">
+				<greaterthan value="$cond" break="true">
+					<execute function="#f1"  content="$a1"/>
+				</greaterthan>
+				<else>
+					<execute function="#f1" content="$a2"/>
+				</else>
+			</condition>
+			
+			<write content="!$x"/>
+			
+			<condition select="$b">
+				<greaterthan value="$cond" break="true">
+					<execute function="#f1" content="$a2"/> 
+				</greaterthan>
+				<else>
+					<execute function="#f1" content="$a1"/>
+				</else>
+			</condition>
+			
+			<write content="$y"/>
+			<write content="$z"/>
+		</main>
+		
+		<f1 in0="content">
+			<write content="$content"/> 
+		</f1>
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="umstek" passes="7">
+Highly Secure Algorithm\n
+First Pass: Complemented data of the file.\n
+Second Pass: Cryptographically Random Data\n
+Third Pass: Bytes - 170 204 51 85 or 85 51 204 170\n
+Forth Pass: Complement of the Random Data Which is Used in Step 2\n
+Fifth Pass: Bytes - 85 51 204 170 or 170 204 51 85\n
+Sixth Pass: Cryptographically Random Data\n
+Seventh Pass: Cryptographically Random Data
+  </info>
+	
+</bluepencil>

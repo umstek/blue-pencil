@@ -1,0 +1,59 @@
+<bluepencil fileversion="1.0" algorithm="AR380-19" algversion="1.0"> 
+	<file blocksize="$default" autorename="true">
+		
+		<main>
+			<define name="x" content="#rand" length="$default"/>
+			<define name="y" content="75 75 75 75"/>
+			<define name="z" content="180 180 180 180"/>
+			
+			<write content="$x"/>
+			<write content="$y"/>
+			<write content="$z"/>
+		</main>
+
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<terminate/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>
+		
+	</file>
+	
+	<freespace filesize="$fdefault">
+		
+		<event_pause>
+			<Pause/>
+		</event_pause>
+		
+		<event_resume>
+			<resume/>
+		</event_resume>
+		
+		<event_stop>
+			<delete/>
+		</event_stop>
+		
+		<event_finish>
+			<delete/>
+		</event_finish>	
+		
+	</freespace>
+	
+	<info author="US Army" passes="3">
+Secure Algorithm\n
+First Pass: Random data\n
+Second Pass: 75\n
+Third Pass: 180
+	</info>
+	
+</bluepencil>
