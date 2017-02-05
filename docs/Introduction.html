@@ -1,0 +1,85 @@
+﻿<html>
+	
+<head>
+	<title>Introduction</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 3.7.1.482">
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "blue-pencil documentation.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Introduction");
+			}
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="topic_header">
+			<div id="topic_header_content">
+				<h1>Introduction</h1>
+				
+				</div>
+			<div id="topic_header_nav">
+				<a href="Welcome.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts13">INTRODUCTION</span></p>
+<p class="rvps5"><span class="rvts17">blue-pencil</span><span class="rvts18">: Scriptable Shredding System</span></p>
+<p class="rvps8"><span class="rvts7"><br/></span></p>
+<p class="rvps6"><span class="rvts19">CAUTION:</span></p>
+<p class="rvps4"><span class="rvts10">This is an </span><span class="rvts19">alpha</span><span class="rvts10"> testing release of the software. </span></p>
+<p class="rvps9"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14">What is blue-pencil?</span></p>
+<p class="rvps4"><span class="rvts10">blue-pencil</span><span class="rvts11"> is a software which is designed to </span><span class="rvts12">shred</span><span class="rvts11"> files.</span></p>
+<p class="rvps9"><span class="rvts14"><br/></span></p>
+<p class="rvps7"><span class="rvts14">What happens when we delete a file?</span></p>
+<p class="rvps4"><span class="rvts11">When we delete a file with the help of a file browser (i.e. Windows Explorer), the file is not actually deleted. But the mark (i.e. index) specifying where the file is and the size of the file and the filename etc. is deleted. So, we can use a normal recovery software (e.g.: undelete) to recover the file. If the file is not overwritten by another file, we can recover it. </span></p>
+<p class="rvps8"><span class="rvts15"><br/></span></p>
+<p class="rvps6"><span class="rvts14">So what can we do to make it unrecoverable?</span></p>
+<p class="rvps4"><span class="rvts11">What we do is overwriting the file with some values, so normal recovering software will not be able to recover it. However, a microscopic analysis on the disk can be done to recover the file. So, the file is still recoverable. Overwriting the file multiple times may reduce this risk of recovering. Several standards (or algorithms) are present to shred file. Most of them use pseudo-random numbers to overwrite the file.</span></p>
+<p class="rvps8"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14">Why use blue-pencil?</span></p>
+<p class="rvps4"><span class="rvts11">What is special with </span><span class="rvts10">blue-pencil</span><span class="rvts11"> is the scripting support, which enables the user to create their own algorithm to shred files. And also we can edit present algorithms and customize them.</span></p>
+<p class="rvps4"><span class="rvts11">So we can call this software a scriptable shredding system. The </span><span class="rvts10">blue-pencil script </span><span class="rvts8">is basically based on XML (eXtensible Mark-up Language). It supports basic logical operations, mathematical operations (</span><span class="rvts9">mathematical operations: not yet implemented</span><span class="rvts8">) and conditions. There are no loops in this scripting language but loops are still accessible via functions.</span></p>
+<p class="rvps8"><span class="rvts8"><br/></span></p>
+<p class="rvps2"><span class="rvts8"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Other software names, brands, and company names herein may be trademarks or registered trademarks of their respective owners.</span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2012-2013 by umstek. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

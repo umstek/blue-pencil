@@ -1,0 +1,88 @@
+﻿<html>
+	
+<head>
+	<title>blue-pencil Script</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 3.7.1.482">
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "blue-pencil documentation.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("bluepencilScript");
+			}
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="topic_header">
+			<div id="topic_header_content">
+				<h1>blue-pencil Script</h1>
+				
+				</div>
+			<div id="topic_header_nav">
+				<a href="Gettinghelp.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Filesection.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps13"><span class="rvts27">Start Scripting...</span></p>
+<p class="rvps14"><span class="rvts25">blue-pencil script</span></p>
+<p class="rvps8"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts26">What is blue-pencil script?</span></p>
+<p class="rvps15"><span class="rvts28">blue-pencil script </span><span class="rvts29">is the language to create a .bps file which contains the algorithm to shred files. It's basically based on XML.</span></p>
+<p class="rvps8"><span class="rvts26"><br/></span></p>
+<p class="rvps6"><span class="rvts26">Is it a programming language?</span></p>
+<p class="rvps15"><span class="rvts29">You better call it a 'scripting' language rather than a programming language. Because normal programming languages (e.g.: VisualBasic.NET; delphi; Java; C) are compiled into a machine readable format before execution. But a script is executed just in time without a special compilation procedure (e.g.: vbscript; JavaScript; MS-DOS batch files). </span></p>
+<p class="rvps15"><span class="rvts29">So this is a script which tells the computer how to shred the file.</span></p>
+<p class="rvps8"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts26">Starting to write a .bps file</span></p>
+<p class="rvps15"><span class="rvts28">blue-pencil script</span><span class="rvts29"> file is always surrounded with angle bracketed 'bluepencil' keyword.</span></p>
+<p class="rvps15"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts30">&lt;bluepencil</span><span class="rvts31"> </span><span class="rvts33">fileversion=</span><span class="rvts32">"1.0"</span><span class="rvts31"> </span><span class="rvts33">algorithm=</span><span class="rvts32">"CLR"</span><span class="rvts31"> </span><span class="rvts33">algversion=</span><span class="rvts32">"1.0"</span><span class="rvts30">&gt;</span><span class="rvts31"> </span></p>
+<p class="rvps16"><span class="rvts31"> </span></p>
+<p class="rvps2"><span class="rvts30">&lt;/bluepencil&gt;</span></p>
+<p class="rvps15"><span class="rvts29">Let's consider XML attribute 'attribute' as @attribute and XML element 'element' as &lt;element&gt;... :-)</span></p>
+<p class="rvps15"><span class="rvts29"><br/></span></p>
+<p class="rvps15"><span class="rvts29">@fileversion = the version of the bps file.</span></p>
+<p class="rvps15"><span class="rvts29">@algorithm = the name of the algorithm. </span></p>
+<p class="rvps15"><span class="rvts29">@algversion = algorithm version.</span></p>
+<p class="rvps8"><span class="rvts26"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2012-2013 by umstek. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

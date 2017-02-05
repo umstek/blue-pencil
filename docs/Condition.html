@@ -1,0 +1,99 @@
+﻿<html>
+	
+<head>
+	<title>Condition</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 3.7.1.482">
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "blue-pencil documentation.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Condition");
+			}
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="topic_header">
+			<div id="topic_header_content">
+				<h1>Condition</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="bluepencilScript.html">blue-pencil Script</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="bluepencilScript.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Predefinedvariables.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Execute.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps13"><span class="rvts27">Condition</span></p>
+<p class="rvps14"><span class="rvts25">blue-pencil script</span></p>
+<p class="rvps8"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts26">About condition:</span></p>
+<p class="rvps15"><span class="rvts29">Condition is the logical operator which executes different functions on different conditions.</span></p>
+<p class="rvps8"><span class="rvts26"><br/></span></p>
+<p class="rvps6"><span class="rvts26">Code:</span></p>
+<p class="rvps15"><span class="rvts29">Conditions contains inside a function.</span></p>
+<p class="rvps15"><span class="rvts29">One and only one statement must be written inside &lt;greaterthan&gt; or any other condition and it must be an &lt;execute&gt; command.</span></p>
+<p class="rvps2"><span class="rvts30">&lt;condition </span><span class="rvts33">select=</span><span class="rvts32">"$variable1"</span><span class="rvts30">&gt;</span></p>
+<p class="rvps2"><span class="rvts30"></span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">&lt;greaterthan </span><span class="rvts33">value=</span><span class="rvts32">"$variable2"</span><span class="rvts30"> </span><span class="rvts33">break=</span><span class="rvts32">"true"</span><span class="rvts30">&gt;</span></p>
+<p class="rvps2"><span class="rvts30"></span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">&lt;execute </span><span class="rvts33">function=</span><span class="rvts32">"#function1"</span><span class="rvts30"> </span><span class="rvts33">content=</span><span class="rvts32">"$a1"</span><span class="rvts30">/&gt;</span></p>
+<p class="rvps2"><span class="rvts30"></span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">&lt;/greaterthan&gt;</span></p>
+<p class="rvps2"><span class="rvts30"></span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">&lt;else&gt;</span></p>
+<p class="rvps2"><span class="rvts30"></span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">&lt;execute </span><span class="rvts33">function=</span><span class="rvts32">"#function2"</span><span class="rvts30"> </span><span class="rvts33">content=</span><span class="rvts32">"$a2"</span><span class="rvts30">/&gt;</span></p>
+<p class="rvps2"><span class="rvts30"></span><span class="rvts30"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">&lt;/else&gt;</span></p>
+<p class="rvps2"><span class="rvts30">&lt;/condition&gt;</span></p>
+<p class="rvps15"><span class="rvts29">@select = selects the (first) variable to be compared with another(second).</span></p>
+<p class="rvps15"><span class="rvts29">Available conditions: </span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps15"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29">&lt;greaterthan&gt; ; &gt;</span></p>
+<p class="rvps15"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29">&lt;lesserthan&gt; ; &lt;</span></p>
+<p class="rvps15"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29">&lt;equal&gt; ; =</span></p>
+<p class="rvps15"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29">&lt;notgreaterthan&gt; ; &lt;=</span></p>
+<p class="rvps15"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29">&lt;notlesserthan&gt; ; &gt;=</span></p>
+<p class="rvps15"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts29">&lt;notequal&gt; ; &lt;&gt;</span></p>
+<p class="rvps15"><span class="rvts29">@value = second variable to be compared.</span></p>
+<p class="rvps15"><span class="rvts29">@break = whether not to execute further lines after executing first satisfied condition.</span></p>
+<p class="rvps15"><span class="rvts29">@function = name of a function to be executed.</span></p>
+<p class="rvps15"><span class="rvts29">@content = an input to the function, 'function1'</span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2012-2013 by umstek. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+
